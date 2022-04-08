@@ -1,0 +1,19 @@
+﻿using Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entities.Concrete
+{
+    public class OperationCase:IEntity
+    {
+        public int OperationCaseId { get; set; }
+        public int  OperationId  { get; set; }
+        public int CaseId { get; set; }
+
+
+
+    }
+}
