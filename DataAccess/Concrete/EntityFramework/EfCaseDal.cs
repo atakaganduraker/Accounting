@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCaseDal : EfEntityRepositoryBase<Case, NorthwindContext>, ICaseDal
+    public class EfCaseDal : EfEntityRepositoryBase<Case, AccountingDb>, ICaseDal
     {
        
     }

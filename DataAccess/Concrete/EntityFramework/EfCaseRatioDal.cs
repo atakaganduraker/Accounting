@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCaseRatioDal : EfEntityRepositoryBase<CaseRatio, NorthwindContext>, ICaseRatioDal
+    public class EfCaseRatioDal : EfEntityRepositoryBase<CaseRatio, AccountingDb>, ICaseRatioDal
     {
     }
 }

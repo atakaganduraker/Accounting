@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfOperationTypeDal : EfEntityRepositoryBase<OperationType, NorthwindContext>, IOperationTypeDal
+    public class EfOperationTypeDal : EfEntityRepositoryBase<OperationType, AccountingDb>, IOperationTypeDal
     {
     }
 }

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class NorthwindContext : DbContext
+    public class AccountingDb : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-8GED7AK\SQLEXPRESS01;Database=AccountingDb;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer("Server=KAGAN;Database=AccountingDb;Trusted_Connection=true");
         }
 
         public DbSet<Case> Cases { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfRatioDal : EfEntityRepositoryBase<Ratio, NorthwindContext>, IRatioDal
+    public class EfRatioDal : EfEntityRepositoryBase<Ratio, AccountingDb>, IRatioDal
     {
     
     }
