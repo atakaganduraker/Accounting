@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class Case:IEntity
     {
-        public int CaseId { get; set; }
+        public int Id { get; set; }
         public string CaseName { get; set; }
         public bool IsActive { get; set; }
 

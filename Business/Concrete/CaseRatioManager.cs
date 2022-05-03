@@ -22,7 +22,7 @@ namespace Business.Concrete
         public IResult Add(CaseRatio caseRatio)
         {
             _caseRatioDal.Add(caseRatio);
-            string id = caseRatio.CaseRatioId.ToString();
+            string id = caseRatio.Id.ToString();
             return new SuccessResult(id +"Başarıyla Eklendi");
         }
 

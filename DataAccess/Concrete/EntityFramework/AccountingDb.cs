@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=KAGAN;Database=AccountingDb;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-8GED7AK\SQLEXPRESS01;Database=AccountingDb;Trusted_Connection=true");
         }
 
         public DbSet<Case> Cases { get; set; }
@@ -20,7 +20,7 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Company> Companies { get; set; }
         public DbSet<Operation> Operations { get; set; }
         public DbSet<OperationCase> OperationCases { get; set; }
-        public DbSet<OperationDetail> OperationDetails { get; set; }
+      //  public DbSet<OperationDetail> OperationDetails { get; set; }
         public DbSet<OperationType> OperationTypes { get; set; }
         public DbSet<Ratio> Ratios { get; set; }
     }

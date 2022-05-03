@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class OperationCase:IEntity
     {
-        public int OperationCaseId { get; set; }
+        public int Id { get; set; }
         public int  OperationId  { get; set; }
         public int CaseId { get; set; }
 

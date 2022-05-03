@@ -24,7 +24,7 @@ namespace Business.Concrete
         public IResult Add(Company company)
         {
             _companyDal.Add(company);
-            string id = company.CompanyId.ToString();
+            string id = company.Id.ToString();
             return new SuccessResult(id + "Başarıyla eklendi");
         }
 

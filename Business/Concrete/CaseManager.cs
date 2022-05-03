@@ -22,7 +22,7 @@ namespace Business.Concrete
         public IResult Add(Case casee)
         {
             _caseDal.Add(casee);
-            string id = casee.CaseId.ToString();
+            string id = casee.Id.ToString();
             return new SuccessResult(id + " Başarıyla eklinde ");
         }
 

@@ -14,6 +14,7 @@ namespace Business.Abstract
         IDataResult<List<Operation>> GetById(int id);
         IResult Add(Operation operation);
         IResult Delete(Operation operation);    
-        IResult Uptade(Operation operation);   
+        IResult Uptade(Operation operation); 
+        IResult DeleteById(int id);
     }
 }

@@ -22,13 +22,24 @@ namespace Business.Concrete
         public IResult Add(Operation operation)
         {
           _operationDal.Add(operation);
-            string id = operation.OperationId.ToString();
+            string id = operation.Id.ToString();
             return new SuccessResult(id + " Başarıyla eklinde ");
         }
 
         public IResult Delete(Operation operation)
         {
-            throw new NotImplementedException();
+               _operationDal.Delete(operation);
+            string id = operation.Id.ToString();
+
+            return new SuccessResult(id + " Başarıyla silindi ");
+        }
+        public IResult DeleteById(int id)
+        {
+            var entity = _operationDal.Get(o => o.Id == id);
+
+            _operationDal.Delete(entity);
+            return new SuccessResult(id + " Başarıyla silindi ");
+
         }
 
         public IDataResult<List<Operation>> GetAll()

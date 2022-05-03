@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class Ratio:IEntity
     {
-        public int RatioId { get; set; }
+        public int Id { get; set; }
         public decimal CommissionRatio { get; set; }
         public bool IsActive { get; set; }
     }

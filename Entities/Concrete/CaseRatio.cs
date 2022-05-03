@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class CaseRatio:IEntity
     {
-        public int CaseRatioId { get; set; }
+        public int Id { get; set; }
         public int CaseId { get; set; }
         public int RatioId { get; set; }
 

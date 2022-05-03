@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class OperationDetail:IEntity
     {
-        public int DetailId { get; set; }
+        public int Id { get; set; }
         public string DetailName { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace Business.Concrete
         public IResult Add(OperationCase operationCase)
         {
             _operationCaseDal.Add(operationCase);
-            string id =operationCase.OperationCaseId.ToString();
+            string id =operationCase.Id.ToString();
             return new SuccessResult(id);
         }
 
