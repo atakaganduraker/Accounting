@@ -23,17 +23,27 @@ namespace ConsoleUI
 
             //operationTypeManager.Add(operationType);
             var date = DateTime.Now;
-            OperationManager operationManager = new OperationManager(new EfOperationDal());
-            Operation operation = new Operation() { CustomerName="test22",Price=1150, OperationTime = date,Commission=1502,Net=156,CompanyId=2,CurrencyId=1,IsActive=true,OperationDetailId=2,OperationTypeId=2};
 
-            Console.WriteLine(operationManager.Add(operation).Message);
-            operationManager.Add(operation);
-           
-                
 
+            //OperationManager operationManager = new OperationManager(new EfOperationDal());
+            //Operation operation = new Operation() { CustomerName="test22",Price=1150, OperationTime = date,Commission=1502,Net=156,CompanyId=2,CurrencyId=1,IsActive=true,OperationDetailId=2,OperationTypeId=2};
+
+            //Console.WriteLine(operationManager.Add(operation).Message);
+            //var message = operationManager.Add(operation);
+
+            //Console.WriteLine(message.Message);
+
+            CompanyManager companyManager = new CompanyManager(new EfCompanyDal());
             
+            Company company = new Company()
+            {
 
+                CompanyName="test1",
+                IsActive=true,
+            };
+            var message = companyManager.Add(company);
 
+            Console.WriteLine(message.Message);
 
         }
     }
